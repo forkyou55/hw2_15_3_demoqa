@@ -32,21 +32,13 @@ public class PracticeForm {
         $(".react-datepicker__day--021").click();
         $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#subjectsInput").setValue("English").pressEnter();
-
         $("#uploadPicture").uploadFromClasspath("John Doe.jpeg");
         $("#currentAddress").setValue("Lubyanka Street");
-
-        executeJavaScript("$('footer').remove()");
-        executeJavaScript("$('#fixedban').remove()");
-
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
-
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Delhi")).click();
-
         $("#submit").click();
-
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").shouldHave(text("Foma Kiniaev"),
                 text("FKiniaev@gmail.com"),
