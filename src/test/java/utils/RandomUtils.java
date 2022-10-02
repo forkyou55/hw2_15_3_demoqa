@@ -31,6 +31,7 @@ public class RandomUtils {
     }
 
     public static String getRandomPhone() {
-        return "382" + getRandomLong(1111111111L, 9999999999L).toString();
+        return  getRandomLong(1111111111L, 9999999999L).toString();
+//        return "382" + getRandomLong(1111111111L, 9999999999L).toString();
     }
 }
